@@ -1,6 +1,8 @@
 import "./historico.css";
 
 export default function Historico({ data = [] }) {
+
+  console.log(data)
   return (
     <div className="historico-container">
       <h2>Histórico de Cashback</h2>
@@ -26,8 +28,8 @@ export default function Historico({ data = [] }) {
             data.map((item) => (
               <tr key={item.id}>
                 <td>
-                  {item.data_consulta
-                    ? new Date(item.data_consulta).toLocaleString("pt-BR")
+                  {item.data_cashback
+                    ? new Date(item.data_cashback).toLocaleString("pt-BR")
                     : "-"}
                 </td>
 

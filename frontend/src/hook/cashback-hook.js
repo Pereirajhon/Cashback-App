@@ -10,6 +10,7 @@ export function useCashback() {
   async function loadHistorico() {
     try {
       const data = await buscarHistorico();
+      console.log(data)
       setHistorico(data);
     } catch (err) {
       setError(err.message);
