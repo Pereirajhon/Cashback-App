@@ -1,4 +1,4 @@
-const API_URL = "https://cashback-api.onrender.com"
+const API_URL = "https://cashback-app-paej.onrender.com"
 
 export async function gerarCashback(data) {
   const res = await fetch(`${API_URL}/cashback`, {
