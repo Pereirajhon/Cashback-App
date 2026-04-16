@@ -1,0 +1,42 @@
+.historico-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: #1e293b;
+    border-radius: 12px;
+    color: white;
+  }
+  
+  .historico-container h2 {
+    margin-bottom: 10px;
+  }
+  
+  .historico-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #0b1220;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .historico-table th,
+  .historico-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #1e293b;
+    font-size: 14px;
+  }
+  
+  .historico-table th {
+    background: #111827;
+    color: #cbd5e1;
+  }
+  
+  .historico-table tr:hover {
+    background: #111827;
+  }
+  
+  .empty {
+    text-align: center;
+    padding: 20px;
+    color: #94a3b8;
+  }

@@ -1,0 +1,112 @@
+.container {
+  padding: 32px;
+  background: #0f172a;
+  min-height: 100vh;
+  color: white;
+  font-family: Arial;
+}
+
+/* CARD */
+.card {
+  background: #1e293b;
+  padding: 24px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px; /* AUMENTADO */
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* GRID RESPONSIVO */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+/* INPUTS (UNIFICADO) */
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #0b1220;
+  color: white;
+  width: 100%;
+}
+
+/* BUTTON */
+.form-button {
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.form-button:hover {
+  background: #4f46e5;
+}
+
+/* RESULTADO */
+.resultado {
+  background: #0b1220;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* TABELA */
+.table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  background: #0b1220;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th {
+  background: #111827;
+  color: #cbd5e1;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #334155;
+}
+
+.table tr:hover {
+  background: #111827;
+}
