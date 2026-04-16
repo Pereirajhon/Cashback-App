@@ -1,22 +1,28 @@
 .container {
-  padding: 32px;
+  padding: 30px;
   background: #0f172a;
   min-height: 100vh;
   color: white;
   font-family: Arial;
 }
 
+.container h1 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
 /* CARD */
 .card {
   background: #1e293b;
-  padding: 24px;
+  padding: 20px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 600px; /* AUMENTADO */
+  max-width: 680px; 
   width: 100%;
   margin-bottom: 24px;
+  margin: 0 auto;
 }
 
 /* FORM */
@@ -81,14 +87,14 @@
 /* RESULTADO */
 .resultado {
   background: #0b1220;
-  padding: 12px;
+  padding: 14px;
   border-radius: 8px;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 /* TABELA */
 .table {
-  margin-top: 20px;
+  margin-top: 24px;
   width: 100%;
   border-collapse: collapse;
   background: #0b1220;

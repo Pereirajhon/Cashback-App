@@ -17,8 +17,8 @@ export async function gerarCashback(data) {
   return res.json();
 }
 
-export async function buscarHistorico() {
-  const res = await fetch(`${API_URL}/historico?ordem=recent`);
+export async function buscarHistorico(ordem="recent") {
+  const res = await fetch(`${API_URL}/historico?ordem=${ordem}`);
 
   if (!res.ok) {
     const err = await res.json();

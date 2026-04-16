@@ -9,10 +9,12 @@ export default function HomePage() {
   const [loading, setLoading] = useState(false);
   const [resultado, setResultado] = useState(null);
   const [historico, setHistorico] = useState([]);
+  const [ordenacao, setOrdenacao] = useState("recent");
+
 
   async function loadHistorico() {
     try {
-      const res = await buscarHistorico();
+      const res = await buscarHistorico(ordenacao);
       setHistorico(res);
     } catch (err) {
       console.error("Erro ao buscar histórico:", err);
@@ -46,8 +48,8 @@ export default function HomePage() {
   }
 
   useEffect(() => {
-    loadHistorico();
-  }, []);
+    loadHistorico()
+  }, [ordenacao])
 
   return (
     <div className="container">
@@ -94,7 +96,7 @@ export default function HomePage() {
         )}
       </div>
 
-      <Historico data={historico} />
+      <Historico ordenacao={ordenacao} setOrdenacao={setOrdenacao} data={historico} />
     </div>
   );
 }
